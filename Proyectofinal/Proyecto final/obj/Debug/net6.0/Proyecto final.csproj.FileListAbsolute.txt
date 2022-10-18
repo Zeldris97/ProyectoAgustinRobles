@@ -1,0 +1,22 @@
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.csproj.AssemblyReference.cache
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.AssemblyInfoInputs.cache
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.AssemblyInfo.cs
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.csproj.CoreCompileInputs.cache
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\Proyecto final.exe
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\Proyecto final.deps.json
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\Proyecto final.runtimeconfig.json
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\Proyecto final.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\Proyecto final.pdb
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\System.Data.SqlClient.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.csproj.CopyComplete
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\refint\Proyecto final.dll
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.pdb
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.genruntimeconfig.cache
+E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\ref\Proyecto final.dll
