@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Proyectos curso c#\\Proyecto final\\Proyecto final\\Proyecto final.csproj": {}
+    "C:\\Users\\Agustin\\TPFinal\\ProyectoAgustinRobles\\Proyectofinal\\Proyecto final\\Proyecto final.csproj": {}
   },
   "projects": {
-    "E:\\Proyectos curso c#\\Proyecto final\\Proyecto final\\Proyecto final.csproj": {
+    "C:\\Users\\Agustin\\TPFinal\\ProyectoAgustinRobles\\Proyectofinal\\Proyecto final\\Proyecto final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Proyectos curso c#\\Proyecto final\\Proyecto final\\Proyecto final.csproj",
+        "projectUniqueName": "C:\\Users\\Agustin\\TPFinal\\ProyectoAgustinRobles\\Proyectofinal\\Proyecto final\\Proyecto final.csproj",
         "projectName": "Proyecto final",
-        "projectPath": "E:\\Proyectos curso c#\\Proyecto final\\Proyecto final\\Proyecto final.csproj",
+        "projectPath": "C:\\Users\\Agustin\\TPFinal\\ProyectoAgustinRobles\\Proyectofinal\\Proyecto final\\Proyecto final.csproj",
         "packagesPath": "C:\\Users\\Agustin\\.nuget\\packages\\",
-        "outputPath": "E:\\Proyectos curso c#\\Proyecto final\\Proyecto final\\obj\\",
+        "outputPath": "C:\\Users\\Agustin\\TPFinal\\ProyectoAgustinRobles\\Proyectofinal\\Proyecto final\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

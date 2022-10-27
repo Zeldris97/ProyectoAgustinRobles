@@ -1,0 +1,20 @@
+{
+	"id": 0,
+	"comentarios": "SUPER",
+	"idUsuario": 1,
+	"productos": [
+		{
+			"id": 0,
+			"stock": 8,
+			"idProducto": 1,
+			"idVenta": 0
+		},
+		{
+			"id": 0,
+			"stock": 34,
+			"idProducto": 2,
+			"idVenta": 0
+		}
+
+	]
+}

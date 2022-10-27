@@ -20,3 +20,11 @@ E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\refint\Proy
 E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.pdb
 E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\Proyecto final.genruntimeconfig.cache
 E:\Proyectos curso c#\Proyecto final\Proyecto final\obj\Debug\net6.0\ref\Proyecto final.dll
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.csproj.AssemblyReference.cache
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.AssemblyInfoInputs.cache
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.AssemblyInfo.cs
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.csproj.CoreCompileInputs.cache
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.dll
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\refint\Proyecto final.dll
+C:\Users\Agustin\TPFinal\ProyectoAgustinRobles\Proyectofinal\Proyecto final\obj\Debug\net6.0\Proyecto final.pdb
