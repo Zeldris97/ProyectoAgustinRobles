@@ -10,9 +10,9 @@ namespace ApiProyectoFinal.Controllers
     public class VentaController : ControllerBase
     {
         [HttpPost]
-        public void CargarVenta([FromBody] Proyecto_final.Models.Venta vta)
+        public void AgregarVenta([FromBody] Proyecto_final.Models.ProductoVenta vta, int id)
         {
-            Proyecto_final.Repository.Venta.CargarVenta(vta);
+            Proyecto_final.Repository.Venta.AgregarVenta(vta,id);
         }
 
         [HttpGet("GetVentas")]

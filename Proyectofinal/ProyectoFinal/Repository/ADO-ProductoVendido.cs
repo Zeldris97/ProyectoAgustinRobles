@@ -107,29 +107,7 @@ namespace Proyecto_final.Repository
             return _ProductoVendido;
         }
 
-        public Proyecto_final.Models.ProductoVendido CargarProductoVendido(long id)
-        {
-            AccesoDatos ds = new AccesoDatos();
-
-
-            SqlConnection cn = ds.ObtenerConexion();
-            var prov = new Proyecto_final.Models.ProductoVendido();
-
-
-            SqlCommand cmd = new SqlCommand("INSERT INTO dbo.ProductoVendido (Stock,idProducto,idVenta) VALUES (@Stock,@IdProducto, @IdVenta)", cn);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int)).Value = prov.Stock;
-            cmd.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.Int)).Value = prov.IdProducto;
-            cmd.Parameters.Add(new SqlParameter("IdVenta", SqlDbType.Int)).Value = id;
-            
-
-       
-
-            ds.CerrarConexion();
-
-            return prov;
-
-        }
+  
 
 
 

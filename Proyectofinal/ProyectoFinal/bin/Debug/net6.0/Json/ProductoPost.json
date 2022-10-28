@@ -1,8 +1,8 @@
 {
 	"Id":0,
-	"Descripciones": "CERVEZA CORONA 330 ml",
-	"Costo": 89.5,
-	"PrecioVenta": 120.5,
-	"Stock": 100,
+	"Descripciones": "Alfajor Guaymallen",
+	"Costo": 20,
+	"PrecioVenta": 40,
+	"Stock": 967,
 	"IdUsuario": 3
 }	

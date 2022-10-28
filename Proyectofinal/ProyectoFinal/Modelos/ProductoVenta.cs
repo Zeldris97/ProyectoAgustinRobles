@@ -1,6 +1,6 @@
 ﻿using Proyecto_final.Models;
 
-namespace Proyecto_final.Modelos
+namespace Proyecto_final.Models
 {
     public class ProductoVenta :Venta
     {

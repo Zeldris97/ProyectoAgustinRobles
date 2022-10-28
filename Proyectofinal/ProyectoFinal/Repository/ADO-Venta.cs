@@ -76,32 +76,39 @@ namespace Proyecto_final.Repository
 
         }
 
-        public static void CargarVenta(Proyecto_final.Models.Venta vta)
+        public static void AgregarVenta(Proyecto_final.Models.ProductoVenta vta, int IdUs)
         {
             long id;
          
             AccesoDatos ds = new AccesoDatos();
             SqlConnection cn = ds.ObtenerConexion();
-            var prov = new Proyecto_final.Repository.ProductoVendido();
+            
             var proVenta = new Proyecto_final.Models.ProductoVendido();
 
             SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[Venta] (Comentarios, IdUsuario) VALUES (@Comentarios, @IdUsuario); Select scope_identity();", cn);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add(new SqlParameter("Comentarios", SqlDbType.NVarChar)).Value = vta.Comentarios;
-            cmd.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt)).Value = vta.IdUsuario;
+            cmd.Parameters.Add(new SqlParameter("IdUsuario", SqlDbType.BigInt)).Value = IdUs;
             id = Convert.ToInt64(cmd.ExecuteScalar());
 
-            //INSERT en tabla producto vendido con lista de productos enviados
+           
+
+            foreach (Proyecto_final.Models.ProductoVendido pro in vta.ProductosVendidos)
+            {
+                cmd = new SqlCommand("INSERT INTO dbo.ProductoVendido (Stock,idProducto,idVenta) VALUES (@Stock,@IdProducto, @IdVenta)", cn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int)).Value = proVenta.Stock;
+                cmd.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.Int)).Value = proVenta.IdProducto;
+                cmd.Parameters.Add(new SqlParameter("IdVenta", SqlDbType.Int)).Value = proVenta.IdVenta;
 
 
-           proVenta= prov.CargarProductoVendido(id);
 
-                //Actualizar Stock en Productos
                 cmd = new SqlCommand("UPDATE Producto SET Stock = Stock - @Stock WHERE idProducto = @IdProducto", cn);
                 cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int)).Value = proVenta.IdVenta;
-            cmd.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.BigInt)).Value = proVenta.Stock;
+                cmd.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int)).Value = proVenta.IdVenta;
+                cmd.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.BigInt)).Value = proVenta.Stock;
                 cmd.ExecuteNonQuery();
+            }
 
             ds.CerrarConexion();
             
