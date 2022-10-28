@@ -17,7 +17,7 @@ namespace ApiProyectoFinal.Controllers
         }
 
         // POST api/<ValuesController>
-        [HttpGet("GetUsuariosNombre")]
+        [HttpGet]
         public Proyecto_final.Models.Usuario Get(String nombre)
         {
             return Proyecto_final.Repository.Usuario.TraerUsuarioPorNombre(nombre);
@@ -25,7 +25,7 @@ namespace ApiProyectoFinal.Controllers
 
         // PUT api/<ValuesController>/5
 
-        [HttpGet("GetInicioSesion")]
+        [HttpGet]
         public Proyecto_final.Models.Usuario Get(String nombre, String contraseña)
         {
             return Proyecto_final.Repository.Usuario.IniciarSesion(nombre, contraseña);

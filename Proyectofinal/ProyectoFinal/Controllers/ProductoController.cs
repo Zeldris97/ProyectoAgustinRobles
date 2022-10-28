@@ -21,7 +21,7 @@ namespace ApiProyectoFinal
         }
 
         // GET api/<ValuesController>/5
-        [HttpGet("GetProductosId")]
+        [HttpGet]
         public Proyecto_final.Models.Producto Get(Int32 id)
         {
             return Proyecto_final.Repository.Producto.TraerProductoPorId(id);

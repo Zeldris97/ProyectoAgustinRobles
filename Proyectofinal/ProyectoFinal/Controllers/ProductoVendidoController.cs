@@ -15,7 +15,7 @@ namespace ApiProyectoFinal.Controllers
             return Proyecto_final.Repository.ProductoVendido.DevolverProductosVendidos();
         }
 
-        [HttpGet("GetProductosVendidos")]
+        [HttpGet]
         public List<Proyecto_final.Models.ProductoVendido> Get(Int32 id)
         {
             return Proyecto_final.Repository.ProductoVendido.TraerProductoVendidoPorUsuario(id);
