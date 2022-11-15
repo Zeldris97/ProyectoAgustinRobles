@@ -120,21 +120,33 @@ namespace Proyecto_final.Repository
             AccesoDatos ds = new AccesoDatos();
             SqlConnection cn = ds.ObtenerConexion();
             long id;
+            var usuario = new Proyecto_final.Models.Usuario();
 
+            usuario = TraerUsuarioPorID(us.id);
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(Nombre,Apellido,NombreUsuario,Contraseña,Mail) VALUES (@Nombre,@Apellido,@NombreUsuario,@Contraseña,@Mail); Select scope_identity()", cn);
-            cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add(new SqlParameter("Nombre", SqlDbType.NVarChar)).Value = us.Nombre;
-            cmd.Parameters.Add(new SqlParameter("Apellido", SqlDbType.NVarChar)).Value = us.Apellido;
-            cmd.Parameters.Add(new SqlParameter("NombreUsuario", SqlDbType.NVarChar)).Value = us.NombreUsuario;
-            cmd.Parameters.Add(new SqlParameter("Contraseña", SqlDbType.NVarChar)).Value = us.Contraseña;
-            cmd.Parameters.Add(new SqlParameter("Mail", SqlDbType.NVarChar)).Value = us.Mail;
-            id = Convert.ToInt64(cmd.ExecuteScalar());
+            if (usuario.Equals(us))
+            {
+                Console.WriteLine("El usuario no existe");
+                return 0;
 
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(Nombre,Apellido,NombreUsuario,Contraseña,Mail) VALUES (@Nombre,@Apellido,@NombreUsuario,@Contraseña,@Mail); Select scope_identity()", cn);
+                cmd.CommandType = CommandType.Text;
+                cmd.Parameters.Add(new SqlParameter("Nombre", SqlDbType.NVarChar)).Value = us.Nombre;
+                cmd.Parameters.Add(new SqlParameter("Apellido", SqlDbType.NVarChar)).Value = us.Apellido;
+                cmd.Parameters.Add(new SqlParameter("NombreUsuario", SqlDbType.NVarChar)).Value = us.NombreUsuario;
+                cmd.Parameters.Add(new SqlParameter("Contraseña", SqlDbType.NVarChar)).Value = us.Contraseña;
+                cmd.Parameters.Add(new SqlParameter("Mail", SqlDbType.NVarChar)).Value = us.Mail;
+                id = Convert.ToInt64(cmd.ExecuteScalar());
+                ds.CerrarConexion();
+                return id;
+            }
 
-            ds.CerrarConexion();
+            
 
-            return id;
+           
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto_final.Repository;
+using System.ComponentModel;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -20,5 +21,12 @@ namespace ApiProyectoFinal.Controllers
         {
             return Proyecto_final.Repository.Venta.TraerVenta(id);
         }
+
+        [HttpDelete]
+        public void Eliminar([FromBody] Int32 idVenta)
+        {
+            Proyecto_final.Repository.Venta.EliminarVenta(idVenta);
+        }
+
     }
 }

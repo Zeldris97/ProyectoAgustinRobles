@@ -114,9 +114,73 @@ namespace Proyecto_final.Repository
             
         }
 
+
+        public static void EliminarVenta(int IdV)
+        {
+            int filasEliminadas;
+            int sum;
+            var listaPV = new List<Proyecto_final.Models.ProductoVendido>();
+            var Parametro = new SqlParameter();
+         
+
+            AccesoDatos ds = new AccesoDatos();
+            SqlConnection cn = ds.ObtenerConexion();
+
+            Parametro.ParameterName = "IdVenta";
+            Parametro.SqlDbType = SqlDbType.BigInt;
+            Parametro.Value = IdV;
+
+         
+
+
+         
+           
+
+            SqlDataReader reader = ds.EjecutarConsulta("SELECT * FROM ProductoVendido Where IdVenta =@IdVenta",Parametro);
+          
+
+            if(reader.HasRows)
+            {
+                ds.EjecutarConsulta("Delete FROM Venta WHERE Id = @IdVenta", Parametro);
+                ds.EjecutarConsulta("Delete from ProductoVendido where IdVenta = @IdVenta", Parametro);
+                while (reader.Read())
+                {
+                    var pv = new Proyecto_final.Models.ProductoVendido();
+
+                    pv.id = Convert.ToInt32(reader.GetValue(0));
+                    pv.Stock = Convert.ToInt32(reader.GetValue(1));
+                    pv.IdProducto = Convert.ToInt32(reader.GetValue(2));
+                    pv.IdVenta = Convert.ToInt32(reader.GetValue(3));
+
+                    listaPV.Add(pv);
+                }
+
+
+                foreach (Proyecto_final.Models.ProductoVendido pv in listaPV) {
+                  
+                    
+                    SqlCommand cmd = new SqlCommand("UPDATE Producto SET Stock = Stock + @Stock WHERE Id = @IdProducto", cn);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.Parameters.Add(new SqlParameter("Stock", SqlDbType.Int)).Value = pv.Stock;
+                    cmd.Parameters.Add(new SqlParameter("IdProducto", SqlDbType.BigInt)).Value = pv.IdProducto;
+                    cmd.ExecuteNonQuery();
+
+                }
+                      
+
+            }
+
+            ds.CerrarConexion();
+
+
+        }
+            
+
     }
 
+ }
 
-}
+
+
 
 
